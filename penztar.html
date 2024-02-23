@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sportutca fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="font-poppins">
+    <nav class="border-gray-200 bg-white font-bold italic sticky top-0 z-50">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img
+            src="https://sportutca.hu/wp-content/uploads/2024/02/Sportutca_Logo_Fitnesz-Convertedw.png"
+            class="max-h-14"
+            alt="Flowbite Logo"
+          />
+        </a>
+        <button
+          data-collapse-toggle="navbar-solid-bg"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          aria-controls="navbar-solid-bg"
+          aria-expanded="false"
+        >
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
+          <ul
+            class="flex flex-col mt-4 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent"
+          >
+            <li>
+              <a
+                href="http://localhost:5173/#kezdolap"
+                class="block py-2 px-3 md:p-0 mb-2 md:my-0 text-gray-900 rounded hover:text-white hover:bg-sp-orange md:hover:bg-transparent md:border-0 md:hover:text-sp-orang"
+                aria-current="page"
+                >Kezdőlap</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="#informaciok"
+                class="block py-2 px-3 md:p-0 mb-2 md:my-0 text-gray-900 rounded hover:text-white hover:bg-sp-orange md:hover:bg-transparent md:border-0 md:hover:text-sp-orange"
+                >Információk</a
+              >
+            </li>
+            <li>
+              <a
+                href="#foglalas"
+                class="block py-2 px-3 md:p-0 mb-2 md:my-0 text-gray-900 rounded hover:text-white hover:bg-sp-orange md:hover:bg-transparent md:border-0 md:hover:text-sp-orange"
+                >Pályafoglalás</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:text-white hover:bg-sp-orange md:hover:bg-transparent md:border-0 md:hover:text-sp-orange"
+                >Kapcsolat</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="flex flex-col items-center border-b bg-white py-4 sm:flex-row sm:px-10 lg:px-20 xl:px-32"
+    >
+      <div class="mt-4 py-2 text-xs sm:mt-0 sm:ml-auto sm:text-base">
+        <div class="relative">
+          <ul
+            class="relative flex w-full items-center justify-between space-x-2 sm:space-x-4"
+          >
+            <li class="flex items-center space-x-3 text-left sm:space-x-4">
+              <a
+                class="flex h-6 w-6 items-center justify-center rounded-full bg-emerald-200 text-xs font-semibold text-emerald-700"
+                href="#"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M5 13l4 4L19 7"
+                  /></svg
+              ></a>
+              <span class="font-semibold text-gray-900">Foglalás</span>
+            </li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4 text-gray-400"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+            <li class="flex items-center space-x-3 text-left sm:space-x-4">
+              <a
+                class="flex h-6 w-6 items-center justify-center rounded-full bg-gray-600 text-xs font-semibold text-white ring ring-gray-600 ring-offset-2"
+                href="#"
+                >2</a
+              >
+              <span class="font-semibold text-gray-900">Adatok</span>
+            </li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4 text-gray-400"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+            <li class="flex items-center space-x-3 text-left sm:space-x-4">
+              <a
+                class="flex h-6 w-6 items-center justify-center rounded-full bg-gray-400 text-xs font-semibold text-white"
+                href="#"
+                >3</a
+              >
+              <span class="font-semibold text-gray-500">Fizetés</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <form action="" class="grid">
+      <div class="grid sm:px-10 lg:grid-cols-2 lg:px-20 xl:px-32">
+        <div class="mt-10 bg-gray-50 px-4 pt-8 lg:mt-0 order-2">
+          <p class="text-xl font-medium">Számlázási adatok</p>
+          <div class="">
+            <label for="email" class="mt-4 mb-2 block text-sm font-medium"
+              >Email cím</label
+            >
+            <div class="relative">
+              <input
+                type="text"
+                id="email"
+                name="email"
+                class="w-full rounded-md border border-gray-200 px-4 py-3 pl-11 text-sm shadow-sm outline-none focus:z-10 focus:border-sp-orange focus:ring-sp-orange"
+                placeholder="minta.peter@gmail.com"
+              />
+              <div
+                class="pointer-events-none absolute inset-y-0 left-0 inline-flex items-center px-3"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4 text-gray-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
+                  />
+                </svg>
+              </div>
+            </div>
+            <label for="name" class="mt-4 mb-2 block text-sm font-medium"
+              >Számlázási név</label
+            >
+            <div class="relative">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="w-full rounded-md border border-gray-200 px-4 py-3 pl-11 text-sm uppercase shadow-sm outline-none focus:z-10 focus:border-sp-orange focus:ring-sp-orange"
+                placeholder="Teljes név"
+              />
+              <div
+                class="pointer-events-none absolute inset-y-0 left-0 inline-flex items-center px-3"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4 text-gray-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <label
+              for="billing-street"
+              class="mt-4 mb-2 block text-sm font-medium"
+              >Számlázási cím</label
+            >
+            <div class="flex flex-col sm:flex-row">
+              <input
+                type="text"
+                name="billing-zip"
+                class="flex-shrink-0 rounded-md border border-gray-200 px-4 py-3 text-sm shadow-sm outline-none sm:w-1/6 w-full mb-3 sm:mb-0 focus:z-10 focus:border-sp-orange focus:ring-sp-orange mr-5"
+                placeholder="Irányítószám"
+              />
+              <select
+                type="text"
+                name="billing-state"
+                class="w-full rounded-md border border-gray-200 px-4 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-sp-orange focus:ring-sp-orange mr-5 mb-3 sm:mb-0"
+              >
+                <option value="varos">Város</option>
+              </select>
+              <div class="relative flex-shrink-0 sm:w-7/12">
+                <input
+                  type="text"
+                  id="billing-street"
+                  name="billing-street"
+                  class="w-full rounded-md border border-gray-200 px-4 py-3 pl-11 text-sm shadow-sm outline-none focus:z-10 focus:border-sp-orange focus:ring-sp-orange"
+                  placeholder="Utca, házszám"
+                />
+                <div
+                  class="pointer-events-none absolute inset-y-0 left-0 inline-flex items-center px-3"
+                >
+                  <img
+                    class="h-4 w-4 object-contain"
+                    src="/assets/hungary.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+
+            <label
+            for="billing-company"
+            class="mt-4 mb-2 block text-sm font-medium"
+            >Céges adatok</label
+          >
+          <div class="flex flex-col sm:flex-row">
+            <input
+              type="text"
+              name="vat"
+              class="flex-shrink-0 rounded-md border border-gray-200 px-4 py-3 text-sm shadow-sm outline-none sm:w-1/6 w-full mb-3 sm:mb-0 focus:z-10 focus:border-sp-orange focus:ring-sp-orange mr-5"
+              placeholder="Adószám"
+            />
+            <div class="relative flex-shrink-0 sm:w-7/12">
+              <input
+                type="text"
+                id="billing-company"
+                name="billing-company"
+                class="w-full rounded-md border border-gray-200 px-4 py-3 pl-11 text-sm shadow-sm outline-none focus:z-10 focus:border-sp-orange focus:ring-sp-orange"
+                placeholder="Cégnév"
+              />
+              <div
+                class="pointer-events-none absolute inset-y-0 left-0 inline-flex items-center px-3"
+              >
+                <img
+                  class="h-4 w-4 object-contain"
+                  src="/assets/hungary.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+
+            <!-- Total -->
+
+            <div class="mt-6 flex items-center justify-between">
+              <p class="text-sm font-medium text-gray-900">Végösszeg</p>
+              <p class="text-2xl font-semibold text-gray-900">8 000 Ft</p>
+            </div>
+          </div>
+          <button
+            class="mt-4 mb-8 w-full rounded-md bg-sp-orange px-6 py-3 font-medium text-white"
+          >
+            Tovább a fizetésre
+          </button>
+        </div>
+        <div class="px-4 pt-8 order-1 sm:order-2">
+          <p class="text-xl font-medium">Lefoglalt időpontok:</p>
+
+          <div
+            class="mt-8 space-y-3 rounded-lg border bg-white px-2 py-4 sm:px-6"
+          >
+            <div class="flex flex-col rounded-lg bg-white sm:flex-row">
+              <div class="flex w-full flex-col px-4 py-4">
+                <span class="font-semibold">2024. 02. 04. 12:00-13:00</span>
+                <p class="text-lg font-bold">4 990 Ft</p>
+                <label for="partner-email" class="mt-4 mb-2 block text-sm font-medium"
+                  >Partner adatai</label
+                >
+                <div class="flex flex-col sm:flex-row">
+                  <input
+                    type="text"
+                    name="name"
+                    class="flex-shrink-0 rounded-md border border-gray-200 mb-3 sm:mb-0 px-4 py-3 text-sm shadow-sm outline-none sm:w-2/6 w-full focus:z-10 focus:border-sp-orange focus:ring-sp-orange mr-5"
+                    placeholder="Teljes név"
+                  />
+                  <div class="relative flex-shrink-0 sm:w-2/6 w-full mb-3 sm:mb-0">
+                    <input
+                      type="email"
+                      name="partner-email"
+                      class="w-full rounded-md border border-gray-200 px-4 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-sp-orange focus:ring-sp-orange"
+                      placeholder="Email"
+                    />
+                  </div>
+                  <button class="bg-sp-orange mx-5 rounded text-sm text-white py-3 px-5">
+                    Másolás mindre
+                  </button>
+                </div>
+              </div>
+              
+            </div>
+            <button class="text-base leading-tight text-black ml-6 flex flex-row items-center gap-3">
+              <svg
+                        class="w-6 h-6 text-gray-800"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M2 12a10 10 0 1 1 20 0 10 10 0 0 1-20 0Zm11-4.2a1 1 0 1 0-2 0V11H7.8a1 1 0 1 0 0 2H11v3.2a1 1 0 1 0 2 0V13h3.2a1 1 0 1 0 0-2H13V7.8Z"
+                          clip-rule="evenodd"
+                        />
+                      </svg> Partner hozzáadása
+            </button>
+            <div class="flex flex-col rounded-lg bg-white sm:flex-row">
+              <div class="flex w-full flex-col px-4 py-4">
+                <span class="font-semibold">2024. 02. 04. 12:00-13:00</span>
+                <p class="text-lg font-bold">4 990 Ft</p>
+                <label for="partner-email" class="mt-4 mb-2 block text-sm font-medium"
+                >Partner adatai</label
+              >
+              <div class="flex flex-col sm:flex-row">
+                <input
+                  type="text"
+                  name="name"
+                  class="flex-shrink-0 rounded-md border mb-3 sm:mb-0 border-gray-200 px-4 py-3 text-sm shadow-sm outline-none sm:w-2/6 w-full focus:z-10 focus:border-sp-orange focus:ring-sp-orange mr-5"
+                  placeholder="Teljes név"
+                />
+                <div class="relative flex-shrink-0 sm:w-2/6 w-full">
+                  <input
+                    type="email"
+                    name="partner-email"
+                    class="w-full rounded-md border border-gray-200 px-4 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-sp-orange focus:ring-sp-orange"
+                    placeholder="Email"
+                  />
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    <footer class="p-4 bg-white md:p-8 lg:p-10 dark:bg-gray-800">
+      <div class="mx-auto max-w-screen-xl text-center">
+        <a
+          href="#"
+          class="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white"
+        >
+          <img
+            src="https://sportutca.hu/wp-content/uploads/2024/02/Sportutca_Logo_Fitnesz-Convertedw.png"
+            class="max-h-14"
+            alt="Flowbite Logo"
+          />
+        </a>
+        <p class="my-6 text-gray-500">
+          Zalaegerszeg egyetlen 0-24 Fitnesz terme és fallabda pályálya.
+        </p>
+        <ul
+          class="flex flex-col gap-4 flex-wrap justify-center items-center mb-6 text-gray-900"
+        >
+          <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6"
+              >8900 Zalaegerszeg, Sport utca 32. (Tesco mögött)</a
+            >
+          </li>
+          <li>
+            <a href="#informaciok" class="mr-4 hover:underline md:mr-6"
+              >+36 20 407 3308</a
+            >
+          </li>
+          <li>
+            <a href="#foglalas" class="mr-4 hover:underline md:mr-6"
+              >info@sportutca.hu
+            </a>
+          </li>
+        </ul>
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          ><script>
+            document.write(new Date().getFullYear());
+          </script>
+          <a href="#" class="hover:underline">Sportutca</a>. Minden jog
+          fenntartva.</span
+        >
+      </div>
+    </footer>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

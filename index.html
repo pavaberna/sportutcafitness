@@ -1,217 +1,877 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sportutca fitness</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sportutca fitness</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body class="font-poppins">
-  <nav class="border-gray-200 bg-white dark:bg-gray-800 dark:border-gray-700 font-bold italic">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="https://sportutca.hu/wp-content/uploads/2024/02/Sportutca_Logo_Fitnesz-Convertedw.png"
-          class="max-h-14" alt="Flowbite Logo" />
-      </a>
-      <button data-collapse-toggle="navbar-solid-bg" type="button"
-        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-        aria-controls="navbar-solid-bg" aria-expanded="false">
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M1 1h15M1 7h15M1 13h15" />
-        </svg>
-      </button>
-      <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
-        <ul
-          class="flex flex-col mt-4 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent ">
-          <li>
-            <a href="#kezdolap"
-              class="block py-2 px-3 md:p-0 text-white bg-sp-orange rounded md:bg-transparent md:text-sp-orange "
-              aria-current="page">Kezdőlap</a>
-          </li>
-          <li>
-            <a href="#esemenyek"
-              class="block py-2 px-3 md:p-0 my-2 md:my-0 text-gray-900 rounded hover:text-white hover:bg-sp-orange md:hover:bg-transparent md:border-0 md:hover:text-sp-orange">Események</a>
-          </li>
-          <li>
-            <a href="#informaciok"
-              class="block py-2 px-3 md:p-0 mb-2 md:my-0 text-gray-900 rounded hover:text-white hover:bg-sp-orange md:hover:bg-transparent md:border-0 md:hover:text-sp-orange">Információk</a>
-          </li>
-          <li>
-            <a href="#"
-              class="block py-2 px-3 md:p-0 mb-2 md:my-0 text-gray-900 rounded hover:text-white hover:bg-sp-orange md:hover:bg-transparent md:border-0 md:hover:text-sp-orange">Pályafoglalás</a>
-          </li>
-          <li>
-            <a href="#"
-              class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:text-white hover:bg-sp-orange md:hover:bg-transparent md:border-0 md:hover:text-sp-orange">Kapcsolat</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div id="kezdolap" class=" flex relative z-20 items-center overflow-hidden bg-[#f5f5f5]">
-    <div class="sm:max-w-[1280px] mx-auto px-6 flex relative py-20 md:py-28">
-      <div class="sm:w-2/3 lg:w-2/5 flex flex-col relative z-20">
+  <body class="font-poppins">
+    <nav class="border-gray-200 bg-white font-bold italic sticky top-0 z-50">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img
+            src="https://sportutca.hu/wp-content/uploads/2024/02/Sportutca_Logo_Fitnesz-Convertedw.png"
+            class="max-h-14"
+            alt="Flowbite Logo"
+          />
+        </a>
+        <button
+          data-collapse-toggle="navbar-solid-bg"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          aria-controls="navbar-solid-bg"
+          aria-expanded="false"
+        >
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
+          <ul
+            class="flex flex-col mt-4 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent"
+          >
+            <li>
+              <a
+                href="http://localhost:5173/#kezdolap"
+                class="block py-2 px-3 md:p-0 mb-2 md:my-0 text-gray-900 rounded hover:text-white hover:bg-sp-orange md:hover:bg-transparent md:border-0 md:hover:text-sp-orang"
+                aria-current="page"
+                >Kezdőlap</a
+              >
+            </li>
 
-        <h1 class="uppercase text-5xl sm:text-8xl font-black flex flex-col leading-none text-black italic">
-          Sportutca
-          <span class="text-4xl sm:text-7xl text-sp-orange">
-            Fallabda
-          </span>
-          <span class="text-4xl sm:text-7xl text-sp-orange">
-            Fallabda
-          </span>
-          <span class="text-4xl sm:text-7xl text-sp-orange">
-            Fallabda
-          </span>
-        </h1>
-        <div class="flex mt-8">
-          <a href="#"
-            class="uppercase py-2 px-4 rounded-lg bg-sp-orange border-2 border-transparent text-white text-md mr-4 hover:bg-orange-400">
-            Foglalás
-          </a>
-          <a href="#"
-            class="uppercase py-2 px-4 rounded-lg bg-transparent border-2 border-sp-orange text-sp-orange hover:bg-sp-orange hover:text-white text-md">
-            Kapcsolat
-          </a>
+            <li>
+              <a
+                href="#informaciok"
+                class="block py-2 px-3 md:p-0 mb-2 md:my-0 text-gray-900 rounded hover:text-white hover:bg-sp-orange md:hover:bg-transparent md:border-0 md:hover:text-sp-orange"
+                >Információk</a
+              >
+            </li>
+            <li>
+              <a
+                href="#foglalas"
+                class="block py-2 px-3 md:p-0 mb-2 md:my-0 text-gray-900 rounded hover:text-white hover:bg-sp-orange md:hover:bg-transparent md:border-0 md:hover:text-sp-orange"
+                >Pályafoglalás</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:text-white hover:bg-sp-orange md:hover:bg-transparent md:border-0 md:hover:text-sp-orange"
+                >Kapcsolat</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="hidden sm:block sm:w-1/3 lg:w-3/5 relative left-16">
-        <img src="https://sportutca.hu/wp-content/uploads/2024/02/mask.png" class="max-w-xs md:max-w-[80%] m-auto" />
-      </div>
-    </div>
-  </div>
-  <div id="esemenyek" class=" py-24 sm:py-20">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto max-w-2xl lg:mx-0">
-        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Események</h2>
-        <p class="mt-2 text-lg leading-8 text-gray-600">Jelenleg nincs közelgő esemény...</p>
-      </div>
+    </nav>
+    <div
+      id="kezdolap"
+      class="flex relative z-20 items-center overflow-hidden bg-[#fff]"
+    >
       <div
-        class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-        <article class="flex max-w-xl flex-col items-start justify-between">
-          <div class="flex items-center gap-x-4 text-xs">
-            <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2024</time>
-            <a href="#"
-              class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Verseny</a>
-          </div>
-          <div class="group relative">
-            <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-              <a href="#">
-                <span class="absolute inset-0"></span>
-                Tavaszi háziverseny
-              </a>
-            </h3>
-            <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Illo sint voluptas. Error voluptates culpa
-              eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat
-              consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
-          </div>
-
-        </article>
-        <article class="flex max-w-xl flex-col items-start justify-between">
-          <div class="flex items-center gap-x-4 text-xs">
-            <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2024</time>
-            <a href="#"
-              class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Nyíltnap</a>
-          </div>
-          <div class="group relative">
-            <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-              <a href="#">
-                <span class="absolute inset-0"></span>
-                Nyíltnap
-              </a>
-            </h3>
-            <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Illo sint voluptas. Error voluptates culpa
-              eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat
-              consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
-          </div>
-
-        </article>
-        <article class="flex max-w-xl flex-col items-start justify-between">
-          <div class="flex items-center gap-x-4 text-xs">
-            <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2024</time>
-            <a href="#"
-              class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Verseny</a>
-          </div>
-          <div class="group relative">
-            <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-              <a href="#">
-                <span class="absolute inset-0"></span>
-                Őszi háziverseny
-              </a>
-            </h3>
-            <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Illo sint voluptas. Error voluptates culpa
-              eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat
-              consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
-          </div>
-
-        </article>
-      </div>
-    </div>
-  </div>
-  <div id="informaciok" class=" py-24 sm:py-20">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto max-w-2xl lg:mx-0">
-        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Információk</h2>
-        <p class="mt-2 text-lg leading-8 text-gray-600">Jelenleg nincs közelgő bober kurwa...</p>
-      </div>
-      <hr class="my-12">
-      <section class=" dark:bg-gray-900">
-        <div class="gap-8 items-start py-8 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-6 sm:py-2">
-
-          <div class="mt-4 md:mt-0 md:col-span-4">
-            <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">Lorem, ipsum dolor sit amet
-              consectetur adipisicing elit. Voluptatibus sequi temporibus eaque est earum dignissimos, eligendi pariatur
-              sit? Cumque deserunt hic odit doloremque harum, odio laborum facere debitis enim nihil? Lorem, ipsum dolor
-              sit amet consectetur adipisicing elit. Delectus ut odit libero veniam asperiores vitae. Autem, excepturi
-              iste? Optio, expedita cum. Laudantium quisquam harum modi accusantium esse illum id reiciendis. Lorem
-              ipsum, dolor sit amet consectetur adipisicing elit. Commodi vitae ut eaque corrupti facere dicta,
-              explicabo consequatur? Dolore animi et, distinctio fugit debitis eum velit nemo, earum provident,
-              voluptate natus!</p>
-            <a href="#"
-              class="inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">
-              Get started
-              <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd"
-                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                  clip-rule="evenodd"></path>
-              </svg>
+        class="sm:max-w-[1280px] mx-auto px-6 flex relative py-20 md:py-28 justify-center items-center"
+      >
+        <div class="sm:w-2/3 lg:w-2/5 flex flex-col relative z-20">
+          <h1
+            class="uppercase text-5xl sm:text-8xl font-black flex flex-col leading-none text-black italic"
+          >
+            Sportutca
+            <span class="text-4xl sm:text-7xl text-sp-orange"> Fallabda </span>
+          </h1>
+          <div class="flex mt-8">
+            <a
+              href="#foglalas"
+              class="py-2 px-4 rounded-lg bg-sp-orange border-2 border-transparent text-white text-md mr-4 hover:bg-orange-400"
+            >
+              Foglalás
+            </a>
+            <a
+              href="#informaciok"
+              class="py-2 px-4 rounded-lg bg-transparent border-2 border-sp-orange text-sp-orange hover:bg-sp-orange hover:text-white text-md"
+            >
+              Információk
             </a>
           </div>
-          <div class="md:col-span-2">
-            <div
-              class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 ">
-              <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Pályabérleti díj</h5>
-              <div class="flex items-baseline text-gray-900 dark:text-white">
-                <span class="text-5xl font-extrabold tracking-tight">4900</span>
-                <span class="text-3xl font-semibold ml-2">Ft</span>
-                <span class="ms-1 text-xl font-normal text-gray-500 dark:text-gray-400">/óra</span>
-              </div>
-              <ul role="list" class="space-y-5 my-7">
-                <li class="flex items-center">
-                  <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">2 team
-                    members</span>
-                </li>
-              </ul>
-              <button type="button"
-                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Pályafoglalás</button>
-            </div>
-
-          </div>
         </div>
-      </section>
+        <div class="hidden sm:block sm:w-1/3 lg:w-3/5 relative left-16">
+          <img
+            src="https://sportutca.hu/wp-content/uploads/2024/02/mask.png"
+            class="max-w-xs md:max-w-[80%] m-auto"
+          />
+        </div>
+      </div>
     </div>
-  </div>
+    <div id="informaciok" class="py-24 sm:py-20">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-full lg:mx-0">
+          <h2
+            class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+          >
+            Információk
+          </h2>
+          <p class="mt-2 text-lg leading-8 text-gray-600">
+            Kérjük kedves Vendégeinket a házirendet tartsák be, hogy kitűzött
+            célunknak megfelelően és egymás zavarása nélkül tölthessék nálunk
+            idejüket. A szolgáltatások igénybe vétele a Házirend egyidejűleg
+            történő elfogadását is jelenti.
+          </p>
+        </div>
+        <hr class="my-12" />
+        <section class="">
+          <div
+            class="gap-8 items-start py-8 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-6 sm:py-2"
+          >
+            <div class="mt-4 md:mt-0 md:col-span-4">
+              <p class="mb-6 font-light text-gray-500 md:text-lg"></p>
+              <p class="mb-6 font-light text-gray-500 md:text-lg">
+                A Sportutca 2 pályával várja sportolni vágyó vendégeit. Pályáink
+                alkalmi, illetve előre egyeztetett bérleti rendszerességgel is
+                igénybe vehetők.
+              </p>
+              <p class="mb-6 font-light text-gray-500 md:text-lg">
+                Nyitvatartási idő minden nap 0:00-24:00
+              </p>
+              <p class="mb-6 font-light text-gray-500 md:text-lg">
+                A pályákon tartózkodáshoz elengedhetetlen a megfelelő
+                öltözet/felszerelés, kérjük mindig használjon sport cipőt és
+                erre alkalmas ruházatot. Futó-, stoplis jellegű cipő használata
+                a pályákon tilos! A fallabda pályák játékra való esetleges
+                alkalmatlanságát mindig az üzemeltető dönti el – kérjük kétes
+                esetekben telefonon érdeklődjenek ezügyben.
+              </p>
+              <p class="mb-6 font-light text-gray-500 md:text-lg">
+                Kérjük vendégeinket közösen törekedjünk a tisztaság megőrzésére.
+                Az öltözőben, illetve a pályák mellett hagyott értékekért az
+                üzemeltető felelősséget nem vállal. A fallabda pályát mindenki a
+                saját felelősségére használja. Kérjük, a játék során a
+                sportszerű és kulturált viselkedést, ne zavarjuk mások játékát.
+                14 éven aluli gyermek csak megfelelő felügyelettel tartózkodhat
+                a helyszínen.
+              </p>
+              <p class="mb-6 font-bold text-black md:text-lg">
+                A pálya lefoglalása után lemondására lehetőség nincs. Foglalás
+                után a fizetési kötelezettség minden esetben érvényes.
+              </p>
+              <p class="mb-6 font-bold text-black md:text-lg">
+                A játékidő kizárólag a bérelt időtartamra szól. A játék egész
+                órakor kezdődik és óra 55 percig tart. A maradék 5 percben
+                kérjük a játékosokat a felszerelések összeszedésére és a pálya
+                elhagyására.
+              </p>
+              <p class="mb-6 font-bold text-black md:text-lg">
+                Amennyiben a kezdési időpontra, az elvárt állapotban nem került
+                átadásra a pálya, kérjük, jelezze. A pályát használatba venni
+                csak érvényes foglalással.
+              </p>
+            </div>
+            <div class="md:col-span-2">
+              <div
+                class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8"
+              >
+                <h5 class="mb-4 text-xl font-medium text-gray-500">
+                  Pályabérleti díj
+                </h5>
+                <div class="flex items-baseline text-gray-900">
+                  <span class="text-5xl font-extrabold tracking-tight"
+                    >4900</span
+                  >
+                  <span class="text-3xl font-semibold ml-2">Ft</span>
+                  <span class="ms-1 text-xl font-normal text-gray-500"
+                    >/óra</span
+                  >
+                </div>
+                <ul role="list" class="space-y-5 my-7">
+                  <li class="flex items-center">
+                    <span
+                      class="text-base font-normal leading-tight text-gray-500 ms-3"
+                      >2 team members</span
+                    >
+                  </li>
+                </ul>
+                <button
+                  type="button"
+                  class="text-white bg-sp-orange focus:ring-4 focus:outline-none focus:ring-blue-200 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"
+                >
+                  <a href="#foglalas">Pályafoglalás</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
 
-  <script type="module" src="/main.js"></script>
-</body>
+    <div id="foglalas" class="py-24 sm:py-20">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl lg:mx-0">
+          <h2
+            class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+          >
+            Pályafoglalás
+          </h2>
+          <p class="mt-2 text-lg leading-8 text-gray-600">
+            Válassz egy szabad időpontot és foglald le a pályát.
+          </p>
+        </div>
+        <hr class="my-12" />
+        <section class="">
+          <div
+            class="gap-8 items-start py-8 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-6 sm:py-2"
+          >
+            <div class="mt-4 md:mt-0 md:col-span-4">
+              <!--Itt kezdődik a tab-->
 
+              <div class="mb-4 border-b border-gray-200">
+                <ul
+                  class="flex flex-wrap -mb-px text-sm font-medium text-center"
+                  id="default-styled-tab"
+                  data-tabs-toggle="#default-styled-tab-content"
+                  data-tabs-active-classes="text-sp-orange hover:text-sp-orange border-sp"
+                  data-tabs-inactive-classes="text-gray-500 hover:text-gray-600 border-gray-100 hover:border-gray-300 0"
+                  role="tablist"
+                >
+                  <li class="me-2" role="presentation">
+                    <button
+                      class="inline-block p-4 border-b-2 rounded-t-lg"
+                      id="profile-styled-tab"
+                      data-tabs-target="#styled-profile"
+                      type="button"
+                      role="tab"
+                      aria-controls="profile"
+                      aria-selected="false"
+                    >
+                      Egyes pálya
+                    </button>
+                  </li>
+                  <li class="me-2" role="presentation">
+                    <button
+                      class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300"
+                      id="dashboard-styled-tab"
+                      data-tabs-target="#styled-dashboard"
+                      type="button"
+                      role="tab"
+                      aria-controls="dashboard"
+                      aria-selected="false"
+                    >
+                      Kettes pálya
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div id="default-styled-tab-content">
+                <div
+                  class="hidden p-4 rounded-lg"
+                  id="styled-profile"
+                  role="tabpanel"
+                  aria-labelledby="profile-tab"
+                >
+                  <div class="flex flex-row justify-between py-4">
+                    <div class="flex flex-row">
+                      <span
+                        ><svg
+                          class="w-6 h-6 text-gray-800"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M13.7 5.6A2 2 0 0 1 17 7v10a2 2 0 0 1-3.3 1.5l-5.9-4.9a2 2 0 0 1 0-3l6-5Z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="flex flex-row">
+                      <span>2024. Február</span>
+                    </div>
+                    <div class="flex flex-row">
+                      <span
+                        ><svg
+                          class="w-6 h-6 text-gray-800"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M10.3 5.6A2 2 0 0 0 7 7v10a2 2 0 0 0 3.3 1.5l5.9-4.9a2 2 0 0 0 0-3l-6-5Z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+                    <table
+                      class="text-sm text-left text-gray-500 table-fixed w-[650px] md:w-full"
+                    >
+                      <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                        <tr>
+                          <th scope="col" class="px-3 py-3">Hétfő</th>
+                          <th scope="col" class="px-3 py-3">Kedd</th>
+                          <th scope="col" class="px-3 py-3">Szerda</th>
+                          <th scope="col" class="px-3 py-3">Csütörtök</th>
+                          <th scope="col" class="px-3 py-3">Péntek</th>
+                          <th scope="col" class="px-3 py-3">Szombat</th>
+                          <th scope="col" class="px-3 py-3">Vasárnap</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="bg-white">
+                          <td class="px-3 py-4">
+                            28.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            29.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            30.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            31.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            1.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            2.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            3.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                        </tr>
+                        <tr class="bg-white">
+                          <td class="px-3 py-4">
+                            4.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            5.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            6.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            7.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            8.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            9.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            10.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                        </tr>
+                        <tr class="bg-white">
+                          <td class="px-3 py-4">
+                            11.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            12.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            13.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            14.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            15.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            16.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            17.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                        </tr>
+                        <tr class="bg-white">
+                          <td class="px-3 py-4">
+                            18.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            19.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            20.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            21.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            22.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            23.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            24.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                        </tr>
+                        <tr class="bg-white">
+                          <td class="px-3 py-4">
+                            25.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            26.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            27.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            28.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            29.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            1.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            2.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div
+                  class="hidden p-4 rounded-lg"
+                  id="styled-dashboard"
+                  role="tabpanel"
+                  aria-labelledby="dashboard-tab"
+                >
+                  <div class="flex flex-row justify-between py-4">
+                    <div class="flex flex-row">
+                      <span
+                        ><svg
+                          class="w-6 h-6 text-gray-800"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M13.7 5.6A2 2 0 0 1 17 7v10a2 2 0 0 1-3.3 1.5l-5.9-4.9a2 2 0 0 1 0-3l6-5Z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="flex flex-row">
+                      <span>2024. Március</span>
+                    </div>
+                    <div class="flex flex-row">
+                      <span
+                        ><svg
+                          class="w-6 h-6 text-gray-800"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M10.3 5.6A2 2 0 0 0 7 7v10a2 2 0 0 0 3.3 1.5l5.9-4.9a2 2 0 0 0 0-3l-6-5Z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+                    <table
+                      class="text-sm text-left text-gray-500 table-fixed w-[650px] md:w-full"
+                    >
+                      <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                        <tr>
+                          <th scope="col" class="px-3 py-3">Hétfő</th>
+                          <th scope="col" class="px-3 py-3">Kedd</th>
+                          <th scope="col" class="px-3 py-3">Szerda</th>
+                          <th scope="col" class="px-3 py-3">Csütörtök</th>
+                          <th scope="col" class="px-3 py-3">Péntek</th>
+                          <th scope="col" class="px-3 py-3">Szombat</th>
+                          <th scope="col" class="px-3 py-3">Vasárnap</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="bg-white">
+                          <td class="px-3 py-4">
+                            28.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            29.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            30.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            31.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            1.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            2.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            3.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                        </tr>
+                        <tr class="bg-white">
+                          <td class="px-3 py-4">
+                            4.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            5.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            6.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            7.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            8.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            9.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            10.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                        </tr>
+                        <tr class="bg-white">
+                          <td class="px-3 py-4">
+                            11.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            12.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            13.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            14.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            15.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            16.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            17.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                        </tr>
+                        <tr class="bg-white">
+                          <td class="px-3 py-4">
+                            18.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            19.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            20.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            21.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            22.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            23.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            24.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                        </tr>
+                        <tr class="bg-white">
+                          <td class="px-3 py-4">
+                            25.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            26.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            27.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            28.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            29.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            1.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                          <td class="px-3 py-4">
+                            2.
+                            <p class="text-[0.75rem]">Elérhető: 4</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <!--Itt végződik a tab-->
+            </div>
+            <div class="md:col-span-2 my-10 md:my-0">
+              <div
+                class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8"
+              >
+                <h5 class="text-l font-bold text-black">
+                  Lefoglalt időpontok:
+                </h5>
+
+                <ul role="list" class="my-7">
+                  <li class="flex items-center pb-2">
+                    <span
+                      class="text-base font-normal leading-tight text-gray-500"
+                      >2024. 01. 18. 14:00-15:00</span
+                    >
+                    <button class="text-base leading-tight text-red-500 ml-6">
+                      <svg
+                        class="w-6 h-6 text-gray-800"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M2 12a10 10 0 1 1 20 0 10 10 0 0 1-20 0Zm7.7-3.7a1 1 0 0 0-1.4 1.4l2.3 2.3-2.3 2.3a1 1 0 1 0 1.4 1.4l2.3-2.3 2.3 2.3a1 1 0 0 0 1.4-1.4L13.4 12l2.3-2.3a1 1 0 0 0-1.4-1.4L12 10.6 9.7 8.3Z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="flex items-center pb-2">
+                    <span
+                      class="text-base font-normal leading-tight text-gray-500"
+                      >2024. 01. 18. 14:00-15:00</span
+                    >
+                    <button class="text-base leading-tight text-red-500 ml-6">
+                      <svg
+                        class="w-6 h-6 text-gray-800"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M2 12a10 10 0 1 1 20 0 10 10 0 0 1-20 0Zm7.7-3.7a1 1 0 0 0-1.4 1.4l2.3 2.3-2.3 2.3a1 1 0 1 0 1.4 1.4l2.3-2.3 2.3 2.3a1 1 0 0 0 1.4-1.4L13.4 12l2.3-2.3a1 1 0 0 0-1.4-1.4L12 10.6 9.7 8.3Z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+
+                <h5 class="text-l font-bold text-black">Szabad időpontok:</h5>
+
+                <ul role="list" class="my-7">
+                  <li class="flex items-center pb-2">
+                    <span
+                      class="text-base font-normal leading-tight text-gray-500"
+                      >2024. 01. 18. 14:00-15:00</span
+                    >
+                    <button class="text-base leading-tight text-red-500 ml-6">
+                      <svg
+                        class="w-6 h-6 text-gray-800"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M2 12a10 10 0 1 1 20 0 10 10 0 0 1-20 0Zm11-4.2a1 1 0 1 0-2 0V11H7.8a1 1 0 1 0 0 2H11v3.2a1 1 0 1 0 2 0V13h3.2a1 1 0 1 0 0-2H13V7.8Z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="flex items-center pb-2">
+                    <span
+                      class="text-base font-normal leading-tight text-gray-500"
+                      >2024. 01. 18. 14:00-15:00</span
+                    >
+                    <button class="text-base leading-tight text-red-500 ml-6">
+                      <svg
+                        class="w-6 h-6 text-gray-800"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M2 12a10 10 0 1 1 20 0 10 10 0 0 1-20 0Zm11-4.2a1 1 0 1 0-2 0V11H7.8a1 1 0 1 0 0 2H11v3.2a1 1 0 1 0 2 0V13h3.2a1 1 0 1 0 0-2H13V7.8Z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+
+                <button
+                  type="button"
+                  class="text-white bg-sp-orange hover:bg-sp-orange focus:ring-4 focus:outline-none focus:ring-blue-200font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"
+                >
+                  Tovább a fizetéshez
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <footer class="p-4 bg-white md:p-8 lg:p-10 dark:bg-gray-800">
+      <div class="mx-auto max-w-screen-xl text-center">
+        <a
+          href="#"
+          class="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white"
+        >
+          <img
+            src="https://sportutca.hu/wp-content/uploads/2024/02/Sportutca_Logo_Fitnesz-Convertedw.png"
+            class="max-h-14"
+            alt="Flowbite Logo"
+          />
+        </a>
+        <p class="my-6 text-gray-500">
+          Zalaegerszeg egyetlen 0-24 Fitnesz terme és fallabda pályálya.
+        </p>
+        <ul
+          class="flex flex-col gap-4 flex-wrap justify-center items-center mb-6 text-gray-900"
+        >
+          <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6"
+              >8900 Zalaegerszeg, Sport utca 32. (Tesco mögött)</a
+            >
+          </li>
+          <li>
+            <a href="#informaciok" class="mr-4 hover:underline md:mr-6"
+              >+36 20 407 3308</a
+            >
+          </li>
+          <li>
+            <a href="#foglalas" class="mr-4 hover:underline md:mr-6"
+              >info@sportutca.hu
+            </a>
+          </li>
+        </ul>
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          ><script>
+            document.write(new Date().getFullYear());
+          </script>
+          <a href="#" class="hover:underline">Sportutca</a>. Minden jog
+          fenntartva.</span
+        >
+      </div>
+    </footer>
+
+    <script type="module" src="main.js"></script>
+  </body>
 </html>
